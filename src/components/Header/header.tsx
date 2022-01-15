@@ -89,8 +89,8 @@ const header = (prop: Props) => {
                             </Transition>
                         </Menu>
                         <div className='hidden md:block text-center'>
-                            <p className='truncate text-3xl'>{profile?.name}</p>
-                            <p className='text-small leading-none font-semibold text-xl'>@{profile?.username}</p>
+                            <p className='truncate text-xl'>{profile?.name}</p>
+                            <p className='text-small leading-none font-semibold text-sm'>@{profile?.username}</p>
                         </div>
                     </div>
                 ): (
@@ -143,7 +143,7 @@ const header = (prop: Props) => {
                     className="rounded-full"
                 />  
                 <div className='p-2 block md:hidden'>
-                    <p className='truncate text-2xl mb-2'>{profile?.name}</p>
+                    <p className='truncate text-xl mb-2'>{profile?.name}</p>
                     <p className='text-small leading-none font-semibold'>@{profile?.username}</p>
                 </div>
               </div>}

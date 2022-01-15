@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import User from 'src/data/user';
 import Request, { RequestReturnType } from 'src/data/request';
-import TextArea from '../Primitives/textarea/index';
+import TextArea from '../TextArea';
 import format from 'date-fns/format';
 import isThisYear from 'date-fns/isThisYear';
-import Spinner from '../Primitives/spinner';
+import Spinner from '../Spinner';
 import Reply from '../Reply';
 import { supabase } from '../../utils/supabase';
 import { mutate } from 'swr';
