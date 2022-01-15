@@ -115,18 +115,11 @@ const header = (prop: Props) => {
                 )}
             </div>
             <button className='md:hidden' onClick={() =>prop.toggleMenu()}>
-                <span className="sr-only">{prop.isMenuVisible ? "close Menu" : "Open Menu"}</span>
-                <svg
-                    width="20"
-                    height="17"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <rect width="20" height="3" fill="white" />
-                    <rect y="7" width="20" height="3" fill="white" />
-                    <rect y="14" width="20" height="3" fill="white" />
-                </svg>
+               {prop.isMenuVisible ? (
+                   <i className='fas fa-times text-white text-2xl'></i>
+               ) : (
+                <i className='fas fa-bars text-white text-2xl'></i>
+               )}
             </button>
         </div> 
         <div className={`menubackdrop ${prop.isMenuVisible ? "show" : ""}`}

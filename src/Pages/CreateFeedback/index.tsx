@@ -176,14 +176,14 @@ export default function CreateFeedback({feedback} : { feedback?: App.Request}) {
                   <button
                     onClick={deleteRequest}
                     type='button'
-                    className='btn danger'
+                    className='danger'
                     disabled={isSubmitting}
                   >
-                    Delete
+                    <i className='fas fa-trash text-danger text-xl'></i>
                   </button>
                 )}
                 <div className='flex space-x-4 mobile:space-x-2 ml-auto'>
-                  <button className='text-secondary'
+                  <button className='text-secondary mr-2'
                     type='button'
                     onClick={history.goBack}
                     disabled={isSubmitting}
@@ -197,7 +197,7 @@ export default function CreateFeedback({feedback} : { feedback?: App.Request}) {
                     {isSubmitting ? (
                       <Spinner className='text-2xl'/>
                     ) : feedback ? (
-                      <>Save<span className='mobile:hidden'>Changes</span></>
+                      <>Save<span className='mobile:hidden ml-1'>Changes</span></>
                     ) : (
                       'Post'
                     )}

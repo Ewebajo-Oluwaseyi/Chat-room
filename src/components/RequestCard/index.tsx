@@ -56,7 +56,7 @@ export default forwardRef<HTMLDivElement, { request: RequestReturnType}>(
                             <i className='fas fa-heart text-danger cursor-pointer md:text-2xl'></i> :
                             <i className='fas fa-heart text-[#CDD2EE] cursor-pointer md:text-2xl'></i>
                         }
-                        <span className='ml-1'>{request.liked_count?.[0].count}</span>
+                        <span className='ml-2 font-bold text-sm'>{request.liked_count?.[0].count}</span>
                     </div>
                     <Link to={`/${request.id}#comments`} className='ml-2'>
                         <CommentCount count={request.comments_count?.[0].count ?? 0}/>

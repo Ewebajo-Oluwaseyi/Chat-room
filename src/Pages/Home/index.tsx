@@ -102,7 +102,7 @@ const Home = () => {
           />
         </div>
         <Link to="/create" className="primary p-2 md:p-4">
-          Post
+          Post <i className="fas fa-comment ml-1"></i>
         </Link>
       </div>
       <div className="px-6 py-8 md:p-0 md:mt-6 flex flex-col">
@@ -113,7 +113,7 @@ const Home = () => {
             <p>No post yet</p>
             <p>Got a post you like to share? </p>
             <Link to="/create" className="btn p-4 primary mt-6">
-              + Add Post
+              + Post <i className="fas fa-comment ml-1"></i>
             </Link>
           </div>
         ): (
