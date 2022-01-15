@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  position: relative;
+  background-color: $light-bg;
+  line-height: 1.5;
+  transition: all 0.2s ease !important;
+}
+.layout-wrapper {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5rem;
+  margin-right: 1.8rem;
+}
+
+.cards_side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}

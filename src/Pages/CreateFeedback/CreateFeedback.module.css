@@ -1,0 +1,7 @@
+.Container {
+  max-width: 40rem !important;
+}
+
+.Icon {
+  background-color: var(--gradient-pattern);
+}

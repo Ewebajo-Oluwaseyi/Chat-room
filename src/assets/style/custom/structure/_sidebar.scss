@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: unset;
+  justify-content: unset;
+  flex-direction: column;
+  margin: 0 1.8rem;
+  gap: 1.5rem;
+  &__logo {
+    display: flex;
+    min-height: 80px;
+    width: 198px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-image: url('../../../image/background-header.png');
+    &__wrapper {
+      h4 {
+        font-size: 20px;
+      }
+
+      h5 {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      color: white;
+      margin-top: auto;
+    }
+    .card {
+      margin: 0rem !important;
+    }
+  }
+}
+
+@media (min-width: 765px) {
+  .filter {
+    width: 198px !important;
+    min-height: 80px !important;
+    margin: 0rem !important;
+  }
+}
+
+.card {
+  min-height: 148px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.button {
+  font-size: 0.9rem;
+  height: 30px;
+  min-width: 30px !important;
+  margin: 0.3rem;
+  text-transform: capitalize !important;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-weight: 500;
+  letter-spacing: normal;
+  background-color: $blue-hover !important;
+  color: $white !important;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  border-style: none;
+  overflow: visible;
+  &__active {
+    background-color: $blue !important;
+  }
+}
+
+.roadmap {
+  &.card {
+    min-height: 148px;
+    width: 200px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .view_link {
+      cursor: pointer;
+      color: $blue;
+      font-weight: 600;
+      text-decoration: underline;
+      font-size: 13px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: $text_primary;
+
+    &__item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &:nth-of-type(1) {
+        .roadmap__indicator {
+          background-color: #f49f85;
+        }
+      }
+      &:nth-of-type(2) {
+        .roadmap__indicator {
+          background-color: #ad1fea;
+        }
+      }
+      &:nth-of-type(3) {
+        .roadmap__indicator {
+          background-color: #62bcfa;
+        }
+      }
+    }
+  }
+  &__indicator {
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 1rem;
+  }
+  &__name {
+    flex: 1;
+  }
+  &__amount {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+}

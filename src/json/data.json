@@ -1,0 +1,58 @@
+{
+  "productRequests": [
+    {
+      "id": 1,
+      "title": "Add tags for solutions",
+      "category": "Enhancement",
+      "upvotes": 112,
+      "status": "suggestion",
+      "description": "Easier to search for solutions based on a specific stack.",
+      "comments": 2
+    },
+    {
+      "id": 2,
+      "title": "Add a dark theme option",
+      "category": "Feature",
+      "upvotes": 99,
+      "status": "suggestion",
+      "description": "It would help people with light sensitivities and who prefer dark mode.",
+      "comments": 4
+    },
+    {
+      "id": 3,
+      "title": "Q&A within the challenge hubs",
+      "category": "Feature",
+      "upvotes": 65,
+      "status": "suggestion",
+      "description": "Challenge-specific Q&A would make for easy reference.",
+      "comments": 1
+    },
+    {
+      "id": 4,
+      "title": "Allow image/video upload to feedback",
+      "category": "Enhancement",
+      "upvotes": 51,
+      "status": "suggestion",
+      "description": "Images and screencasts can enhance comments on solutions.",
+      "comments": 2
+    },
+    {
+      "id": 5,
+      "title": "Ability to follow others",
+      "category": "Feature",
+      "upvotes": 42,
+      "status": "suggestion",
+      "description": "Stay updated on comments and solutions other people post.",
+      "comments": 3
+    },
+    {
+      "id": 6,
+      "title": "Preview images not loading",
+      "category": "Bug",
+      "upvotes": 3,
+      "status": "suggestion",
+      "description": "Challenge preview images are missing when you apply a filter.",
+      "comments": 0
+    }
+  ]
+}

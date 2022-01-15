@@ -1,0 +1,85 @@
+.feeback_card {
+  min-height: 90px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: transform 0.15s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.suggestions {
+  width: 825px;
+  min-height: 90px;
+  padding: 1.5rem;
+  &__wrapper {
+    display: flex;
+    &__upvote {
+      margin-right: 2.5rem;
+    }
+    &__comments {
+      margin-left: auto;
+      align-self: center;
+
+      .comments_content {
+        font-weight: bold;
+        font-size: 16px !important;
+        .fa {
+          color: $gray-500;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  &__content {
+    width: calc(100% - 200px);
+  }
+  &__title {
+    font-size: 1.125rem;
+  }
+  &__description {
+    font-size: 16px;
+    width: unset;
+    margin: 0 0 12px;
+  }
+}
+.suggestions_btn {
+  width: 40px;
+  height: 53px;
+  margin: 0;
+  font-size: 0.9rem;
+  background-color: $light-bg;
+  color: $dark_blue;
+  font-weight: bold;
+  transform: none !important;
+  border-radius: 10px;
+  padding: 0 5px;
+  border-style: none;
+  span {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.btn_category {
+  background-color: $light-bg;
+  color: $blue;
+  border-style: none;
+  padding: 0 10px;
+  font-weight: 500 !important;
+  min-width: 48px;
+  border-radius: 10px;
+}
+.category_btn {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: inherit;
+  line-height: normal;
+  position: relative;
+  padding: 5px;
+}

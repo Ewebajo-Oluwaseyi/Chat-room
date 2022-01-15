@@ -1,0 +1,45 @@
+.header_bar {
+  width: 820px;
+  margin: 0;
+  height: 20px;
+  padding: 1.6rem;
+  border-radius: 10px;
+  background-color: #373f68;
+  display: flex;
+  align-items: center;
+  color: white;
+  &__suggestions {
+    display: flex;
+    gap: 1rem;
+    h3 {
+      color: #f2f4fe;
+    }
+  }
+  .button_feeback {
+    margin: 0;
+    margin-left: auto !important;
+    font-size: 0.9rem;
+    width: 158px;
+    height: 44px !important;
+    background-color: $purple !important;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 13px;
+  .fa {
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+}
+.sort_by {
+  margin-left: 4rem;
+  font-size: 13px;
+  color: #f2f4fe;
+}
