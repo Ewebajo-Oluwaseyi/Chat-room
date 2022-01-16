@@ -29,6 +29,7 @@ const categories = [
     { label: 'Lifestyle', value: 'Lifestyle' },
     { label: 'Fashion', value: 'Fashion' },
     { label: 'Relationship', value: 'Relationship' },
+    { label: 'Food', value: 'Food' }
 ]
 
 export default function CreateFeedback({feedback} : { feedback?: App.Request}) {
