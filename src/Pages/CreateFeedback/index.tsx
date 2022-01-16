@@ -26,7 +26,7 @@ type FormValues = {
 const categories = [
     { label: 'Music', value: 'Music' },
     { label: 'Movies', value: 'Movies' },
-    { label: 'Lifestyle', value: 'Lifestyle' },
+    { label: 'Sports', value: 'Sports' },
     { label: 'Fashion', value: 'Fashion' },
     { label: 'Relationship', value: 'Relationship' },
     { label: 'Food', value: 'Food' }
@@ -83,7 +83,7 @@ export default function CreateFeedback({feedback} : { feedback?: App.Request}) {
         try {
             const { error } = await supabase.from('requests').update({
               title, description, category: category.value
-            }, {returning: 'minimal'});
+            }, {returning: 'minimal'}).match({ id: feedback?.id});
             if (error) throw new Error(error.message);
             toast.success('Feedback updated');
             history.goBack();

@@ -14,7 +14,7 @@ interface Props {
 
 const header = (prop: Props) => {
 
-   const options = ['All', 'Music', 'Movies', 'Lifestyle', 'Fashion', 'Relationship', 'Food']
+   const options = ['All', 'Music', 'Movies', 'Sports', 'Fashion', 'Relationship', 'Food']
    const history = useHistory();
    const user = User();
    const { data: profile } = Profile();
