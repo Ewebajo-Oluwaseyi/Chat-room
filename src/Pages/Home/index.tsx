@@ -101,8 +101,8 @@ const Home = () => {
             sortOption={sortOption}
           />
         </div>
-        <Link to="/create" className="primary p-2 md:p-4">
-          Post <i className="fas fa-comment ml-1"></i>
+        <Link to="/create" className="btn primary p-2 md:p-4 hover:bg-white hover:text-primary">
+          + Post <i className="fas fa-comment ml-1"></i>
         </Link>
       </div>
       <div className="px-6 py-8 md:p-0 md:mt-6 flex flex-col">
@@ -117,6 +117,7 @@ const Home = () => {
             </Link>
           </div>
         ): (
+          <div>
           <div className="grid gap-3">
               {filteredRequests?.map((request, index) => { 
                 return (
@@ -133,6 +134,13 @@ const Home = () => {
                   <RequestCard key={request.id} request={request}/>
                 </Transition>)
               })}
+          </div>
+          <div className="flex flex-col items-center justify-center flex-grow p-8">
+            <p>Got a post you like to share? </p>
+            <Link to="/create" className="btn p-4 primary mt-2">
+              + Post <i className="fas fa-comment ml-1"></i>
+            </Link>
+          </div>
           </div>
         )}
       </div>

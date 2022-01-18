@@ -74,7 +74,7 @@ export default function ViewComment() {
                         <form className='mt-6 p-6 md:px-8 md:py-7 bg-white rounded'
                             onSubmit={(e) => addComment(e)}
                         >
-                            <h3 className='text-lg font-bold'>Add Comment</h3>
+                            <h3 className='text-lg font-bold'>Comment</h3>
                             <TextArea
                                 value={comment}
                                 onChange={(e: any) => setComment(e.target.value)}
@@ -87,7 +87,7 @@ export default function ViewComment() {
                                     <>
                                         <span className='text-light'>{250 - comment.length}</span>
                                         <button
-                                            className='text-primary'
+                                            className='text-alternate rounded p-2 text-small font-semibold bg-alternate-light'
                                             type="submit"
                                             disabled={isSubmit || comment.length === 0}
                                         >

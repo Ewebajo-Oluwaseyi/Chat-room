@@ -14,7 +14,7 @@ export default function Reply({reply}: {reply: RequestReturnType['comments'][0][
                 className='rounded-full overflow-hidden'
                 aria-hidden
              />
-             <div className='ml-2'>
+             <div className='ml-2 flex flex-col'>
                 <div className='flex space-x-2'>
                     <p className='text-small font-bold'>{reply.user?.name}</p>
                     {reply.created_at && (

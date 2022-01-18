@@ -56,7 +56,8 @@ export default function Comment({comment} : {comment: RequestReturnType['comment
                 alt=''
                />
                <div className='ml-2'>
-                    <div className='flex space-x-2'>
+                    <div className='flex flex-col'>
+                        <div className='flex space-x-2'>
                         <p className='text-small font-bold'>{comment.user.name}</p>
                         {comment.created_at && (
                             <p
@@ -69,6 +70,7 @@ export default function Comment({comment} : {comment: RequestReturnType['comment
                                 }
                             </p>
                         )}
+                        </div>
                         <p className='text-small text-light'>@{comment.user.username}</p>
                     </div>
                </div>
@@ -110,7 +112,7 @@ export default function Comment({comment} : {comment: RequestReturnType['comment
                       </form>
                   ) : (
                      <button
-                       className='text-alternate text-sm font-medium mt-4'
+                       className='text-alternate rounded p-2 text-small bg-alternate-light text-sm font-medium mt-4'
                         onClick={() => setShowForm(true)}
                         ref={replyButtonRef}
                      >

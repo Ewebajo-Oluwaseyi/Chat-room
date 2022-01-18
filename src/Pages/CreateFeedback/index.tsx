@@ -191,7 +191,7 @@ export default function CreateFeedback({feedback} : { feedback?: App.Request}) {
                   >
                     Cancel
                   </button>
-                  <button className='text-primary'
+                  <button className='rounded p-3 text-sm font-medium bg-alternate-light text-primary'
                     type='submit'
                     disabled={isSubmitting}
                   >

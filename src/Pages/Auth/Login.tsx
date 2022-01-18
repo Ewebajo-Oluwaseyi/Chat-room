@@ -56,7 +56,6 @@ export default function Login() {
                     validationMessage={errors.password?.message}
                     {...register('password', {
                         required: 'Password is required',
-                        min: {value: 6, message: 'password must be more than 6 letters'}
                     })}
                     required
                 />

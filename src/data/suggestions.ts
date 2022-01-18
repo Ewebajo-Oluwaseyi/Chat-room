@@ -36,7 +36,10 @@ export async function likeRequest(requestId: string) {
   const { data } = await supabase.from('liked').select('*')
   .filter('user_id', 'eq', supabase.auth.session()?.user?.id)
   .filter('request_id', 'eq', requestId);
-  if (data?.length)  throw new Error('You can onlile like once')
+
+  if (data?.length) {
+    return data
+  }
   
   //const { error } = await supabase.from('liked').delete().match({user_id: supabase.auth.session()?.user?.id});
   const { error } = await supabase.from('liked').insert([

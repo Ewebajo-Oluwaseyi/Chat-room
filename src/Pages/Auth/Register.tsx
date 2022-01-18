@@ -19,7 +19,7 @@ export default function Register() {
     const [isSubmit, setSubmit] = useState(false);
     
     async function signUp(values: FormValues) {
-        console.log(supabase)
+       // console.log(supabase)
         try {
             setSubmit(true)
             const {user, error: signUpError} = await supabase.auth.signUp({
@@ -85,7 +85,6 @@ export default function Register() {
                     validationMessage={errors.password?.message}
                     {...register('password', {
                         required: 'Password is required',
-                        min: {value: 6, message: 'password must be more than 6 letters'}
                     })}
                     required
                 />

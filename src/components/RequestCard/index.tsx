@@ -53,7 +53,7 @@ export default forwardRef<HTMLDivElement, { request: RequestReturnType}>(
                 <div className='flex flex-col justify-around items-center ml-auto'>
                     <div onClick={() => likedRequest()}>
                         {request.liked_count?.[0].count > 0 ? 
-                            <i className='fas fa-heart text-danger cursor-pointer md:text-2xl'></i> :
+                            <i className='fas fa-heart cursor-pointer md:text-2xl'></i> :
                             <i className='fas fa-heart text-[#CDD2EE] cursor-pointer md:text-2xl'></i>
                         }
                         <span className='ml-2 font-bold text-sm'>{request.liked_count?.[0].count}</span>
